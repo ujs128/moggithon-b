@@ -1,10 +1,44 @@
+*{
+  line-height: 1.4;
+}
+
+
 body{
   font-family: sans-serif;
-  background-color: #d3edfa;
+  font-family: hannotate SC;
+  background-color: #cbe9f3;
+  width: 100%;
+  
+}
+
+main{
+  background-image: url(https://www.illust-box.jp/db_img/sozai/00014/144256/watermark.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center center;
+}
+
+article{
+  margin: 0;
 }
 
 .keyVisual{
+  margin: auto;
+  max-width: 1200px;
+  height: 400px;
   text-align: center;
+  overflow:hidden;
+  border-radius: 30px;
+}
+
+.keyVisual img {
+  width: 100%;
+  height: 400px;
+  transition:1s;
+}
+.keyVisual img:hover{
+  transform:scale(1.05);
 }
 
 .headerInner{
@@ -15,18 +49,24 @@ body{
 }
 
 .headerInner,.mainInner{
-  max-width: 650px;
+  max-width: 750px;
   margin: auto;
+  margin-bottom: 0;
   padding: 0 20px;
 }
 
+.mainInner{
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
 footer{
-  background: #eeeeee;
+  /* background: #eeeeee; */
+  background-color: #fff;
 }
 
 .footerInner{
   text-align: center;
-  margin-top: 50px;
   padding: 30px;
 }
 .priceWrapper table,
@@ -39,6 +79,8 @@ footer{
 .priceWrapper th,
 .priceWrapper td{
     padding: 7px;
+    background-color: #fff;
+
 }
 
 .priceWrapper table{
@@ -47,33 +89,151 @@ footer{
 
 .priceWrapper th{
     width: 150px;
-    background: #eee;
+    /* background: #eee; */
+    /* background-color: #fff; */
+}
+
+.priceWrapper{
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 20px;
+}
+
+.noteWrapper{
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.contentsWrapper{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contensSection{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 33.33%;
+}
+
+.iconBox{
+  padding: auto;
 }
 
 h2{
   background-image: url(niconico_bg_blue.png);
   line-height: 50px;
-  padding:0 10%;
+  padding:0 15%;
   color: #fff;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.imgBox{
+  text-align: center;
+  /* background-color: #fff; */
+  background-color: #41487e;
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  border-radius: 50%;
+  border-color: #41487e;
+  border-width: 5px;
+}
+
+.imgBox img{
+  border-radius: 50%;
+  position: relative;
+  top: 3px;
+  /* left: 3px; */
+  border: 2px solid #fff;
+}
+
+.imgBox img:hover{
+  animation: hvr-buzz-out 1s 1;
+}
+
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+/* .explain{
+  display: none;
+} */
+
+.textBox{
+  width: 160px;
+  height: 75px;
+  margin: 0 auto;
+  /* padding: 5px; */
+  /* border-radius: 10px; */
+  color: #41487e;
+  /* box-shadow: #1f275e; */
+  text-align: center;
+  vertical-align: center;
+}
+
+.iconText{
+  font-weight: bold;
+}
+
+.textBackground{
+  background-color: rgba(135,206,235,0.6);
 }
 
 .aboutWrapper{
-  padding: 5px;
-  margin: 5px;
-  background-color: rgb(253, 248, 243);
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px; */
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.aboutWrapper img {
-  float :left;
-  margin-right: 10px;
-}
-
-.clearfix:after{
-  content: "";
-  display: block;
-  clear: both;
+.noteWrapper ul{
+  padding-bottom: 15px;
 }
 
 .hover a{
@@ -97,8 +257,10 @@ h2{
 
 main h1{
   text-align: center;
+  margin: auto 0;
 }
 
+/*-----------ここからお問合せ-------------*/
 .contactForm{
   width: 100%;
   max-width: 650px;
