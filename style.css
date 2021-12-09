@@ -8,7 +8,7 @@ body{
   font-family: hannotate SC;
   background-color: #cbe9f3;
   width: 100%;
-  
+  font-weight: bolder;
 }
 
 main{
@@ -49,7 +49,7 @@ article{
 }
 
 .headerInner,.mainInner{
-  max-width: 750px;
+  max-width: 800px;
   margin: auto;
   margin-bottom: 0;
   padding: 0 20px;
@@ -97,6 +97,11 @@ footer{
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.65);
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.priceWrapper h2{
+  margin: auto;
 }
 
 .noteWrapper{
@@ -113,7 +118,7 @@ footer{
   margin-bottom: 20px;
 }
 
-.contensSection{
+.contentsSection{
   padding-left: 15px;
   padding-right: 15px;
   width: 33.33%;
@@ -217,10 +222,9 @@ h2{
 }
 
 .iconText{
-  font-weight: bold;
-}
-
-.textBackground{
+  border-radius: 10px;
+  padding: 3px;
+  font-weight: bolder;
   background-color: rgba(135,206,235,0.6);
 }
 
