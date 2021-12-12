@@ -1,25 +1,22 @@
 .mainpage{
   font-family:sans-serif;
-  background-color: #eeeeee;
+  background-color: #91e3fc;
 }
 
 .keyVisual{
   text-align: center;
 }
 
-header{
-  background-color: rgb(218, 218, 218);
-}
-
 /*ここ変更した*/
-/* .keyVisual img{
+.keyVisual img{
   border-radius: 20px;
-} */
+}
 
 h2{
   background-image: url(niconico_bg_blue.png);
-  /* border-radius: 10px; ここ変更した */
-  line-height: 50px;
+  border-radius: 10px; /*ここ変更した*/
+  line-height: 80px;
+  font-size: 30px;
   padding: 0 15px;
   color: #fff;
   text-align: center;
@@ -32,14 +29,15 @@ h2{
 }
 
 .aboutWrapper img {
-  float: left;
+  /* float: left; */
+  display: flex;
   margin-right: 10px;
 }
 
 .priceWrapper,
 .noteWrpper{
-  width: 650px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .priceWrapper table,
@@ -63,6 +61,13 @@ h2{
   background: #eee;
 }
 
+.moneycaution{
+  width: 650px;
+  background-color: rgba(135, 207, 235, 0.877);
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
 footer{
   background-color: rgb(218, 218, 218);
 }
@@ -75,7 +80,8 @@ footer{
 }
 
 /*ここ変更した*/
-.headerInner,.mainInner{
+.headerInner,
+.mainInner{
   max-width: 650px;
   margin: 0 auto;
   padding: 0 20px;
@@ -104,6 +110,93 @@ footer{
   background: cornflowerblue;
 }
 
+/*ここ変更した*/
+/*ここから下はキッズ向けページ*/
+.headerInner-kids{
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  background-image: url(空のイラスト.png);
+}
+
+/* .headerInner-kids,
+.mainInner-kids{
+  margin: auto;
+  padding: 0 20px;
+}  */
+
+/* タイトル文字色 */
+.logo-kids span{
+  display:inline-block;
+  font-size: 30px;
+  font-weight:bold;
+  width: 50px;
+}
+
+.logo-kids span:nth-of-type(8n+1){color:rgb(255, 0, 0);}  /* １つ目から５つ毎に最後迄 → 1,6,11  */
+.logo-kids span:nth-of-type(8n+2){color:rgb(255, 153, 0);}  /* ２つ目から５つ毎に最後迄 → 2,7,12  */
+.logo-kids span:nth-of-type(8n+3){color:rgb(251, 255, 0);}  /* ３つ目から５つ毎に最後迄 → 3,8,13  */
+.logo-kids span:nth-of-type(8n+4){color:rgb(154, 248, 110);}  /* ４つ目から５つ毎に最後迄 → 4,9,14  */
+.logo-kids span:nth-of-type(8n+5){color:rgb(42, 253, 0);}  /* ４つ目から５つ毎に最後迄 → 4,9,14  */
+.logo-kids span:nth-of-type(8n+6){color:rgb(0, 255, 242);}  /* ５つ目から５つ毎に最後迄 → 5,10,15  */
+.logo-kids span:nth-of-type(8n+7){color:rgb(0, 81, 255);}  /* ５つ目から５つ毎に最後迄 → 5,10,15  */
+.logo-kids span:nth-of-type(8n+8){color:rgb(162, 0, 255);}  /* ５つ目から５つ毎に最後迄 → 5,10,15  */
+
+.logo-kids span:nth-of-type(1),
+.logo-kids span:nth-of-type(3),
+.logo-kids span:nth-of-type(5),
+.logo-kids span:nth-of-type(7){font-size:50px;}
+
+.kidspage{
+  font-family: hannotate SC;
+  background-image: url(背景候補1.jpeg);
+  /* background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center; */
+}
+
+/* .mainInner-kids{
+  max-width: 650px;
+  background-color: #eeeeee;
+  background-image: url();
+  border-radius: 10px;
+  display: flex;
+} */
+
+.article-kids{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin: 0 auto; */
+  /* justify-content: space-evenly; */
+}
+
+/* .article-kids{
+  /* justify-content: space-evenly; */
+  /* display: flex;
+} */ 
+
+.section-kids{
+  background-color: rgba(135, 207, 235, 0.877);
+  background-image: url();
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 25%;
+}
+
+.section-kids img {
+  float: left; 
+  margin-right: 10px;
+  /* margin: auto; */
+  border-radius: 100px;
+}
+
+/*ここ変更した*/
+.footer-kids{
+  background-image: url(砂浜２.jpeg);
+}
+
 .contactButton-kids{
   background: rgb(210, 247, 0);
   width:200px;
@@ -120,6 +213,8 @@ footer{
 .contactButton-kids:hover{
   background: rgb(99, 247, 0);
 }
+
+
 
 /*ここから下はお問合せページ*/
 .contactForm{
