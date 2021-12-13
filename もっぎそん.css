@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+  }
+.background-image{ background-image: url("publicdomainq-0035845vlujtv.png");
+
+}
+  .headerInner{
+    max-width: 650px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mainInner{
+    max-width: 650px;
+    margin: auto;
+  }
+  
+  footer{
+    background: #eee;
+  }
+  
+  .footerInner{
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+  }
+  
+  .keyVisual{
+    text-align: center;
+  }
+  
+  .priceWrapper table,
+  .priceWrapper th,
+  .priceWrapper td{
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  .priceWrapper th,
+  .priceWrapper td{
+    padding: 7px;
+  }
+  
+  .priceWrapper table{
+    width: 50%;
+  }
+  
+  .priceWrapper th{
+    width: 150px;
+    background: #eee;
+  }
+  .highlightchild{
+      background-color: aqua;
+  }
+  h2 {
+      color: rgb(247, 8, 175);
+  }
+.flex{ display: flex;}
+.flex .image {
+    width: 910px; /*画像サイズ指定*/
+    margin: 5px;
+    padding: 0;
+  }
+  .flex .image img {
+    width: 160px;
+    height: auto;
+  }
+  body{
+    font-family: sans-serif;}
+   rt {  
+    text-align: center;
+  }
+  p{
+    color:black ;
+    font-family: "Hannari";
+  }
+ 
+   h1{color: rgb(81, 226, 13);}
+  li{
+    color: rgb(73, 44, 6);
+  }
+  .border-radius-img{
+    /* ここからborder-radiusプロパティを追加 */
+    border-radius: 50%;
+  }
+  a{color: blue;}
+  
+  body{
+    background-image: url("publicdomainq-0035845vlu.jpeg");
+    background-color:rgba(255,255,255,0.85);
+    background-blend-mode:lighten;
+  }
+
+
